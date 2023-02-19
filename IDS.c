@@ -17,7 +17,7 @@ int main() {
     char errbuf[PCAP_ERRBUF_SIZE];
 
     // open capture file for offline processing
-    descr = pcap_open_offline("2021-12-15-thru-20-server-activity-with-log4j-attempts.pcap", errbuf);
+    descr = pcap_open_offline("ADD_YOUR_FILE.pcap", errbuf);
     if (descr == NULL) {
         printf("pcap_open_live() failed: %s", errbuf);
         return 1;
